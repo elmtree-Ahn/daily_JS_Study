@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    // 세팅하는 코드
+    <script>
+      if (typeof Sotrage !== "undefined") {
+        // LocalStorage
+        localStorage.setItem("name", "Luffy"); // 키, 벨류 를 파라미터라 받아요.
+        // SessionStorage
+        sessionStorage.setItem("age", "32");
+        // 문자열로 변환 후 JSON 형태로 저장해요.
+        let arr = ["a", "b"];
+        localStorage.setItem("arr", JSON.stringify(arr));
+      }
+    </script>
+  </body>
+</html>
